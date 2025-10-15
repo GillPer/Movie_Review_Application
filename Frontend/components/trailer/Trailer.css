@@ -1,0 +1,52 @@
+.react-player-container {
+/* Set container height to viewport height minus the header height (assuming header is ~60px) /
+/ This makes the container start exactly under the header */
+height: calc(100vh-60px);
+width: 100vw;
+
+/* Center the content horizontally */
+display: flex;
+justify-content: center;
+
+/* Align items to the start (top) of the container */
+align-items: flex-start;
+
+background-color: #000;
+padding-top: 20px; /* Add some space between the header and the video */
+margin: 0;
+
+}
+
+.video-wrapper {
+position: relative;
+/* Use 90% width of the container, which is 90vw (since container is 100vw) */
+width: 90%;
+max-width: 1400px;
+max-height: calc(100vh - 120px);
+/* Use padding-bottom for the 16:9 aspect ratio */
+height: 0;
+padding-bottom: 47%; 
+
+/* Remove aggressive margin adjustment */
+margin-top: 0; 
+
+background-color: black;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+
+}
+
+.trailer-iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: none;
+}
+
+.trailer-missing-message {
+color: white;
+font-size: 1.5rem;
+}
