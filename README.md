@@ -1,4 +1,4 @@
-# 🎬 Full Stack Movie Review Application
+# 🎬 Full Stack Movie Application
 
 This project is a **comprehensive full-stack application** designed to manage and display movie reviews. It demonstrates the integration of a **Java Spring Boot** backend, a **React** single-page application (SPA) frontend, and a **MongoDB** NoSQL database.
 
